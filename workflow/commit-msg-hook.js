@@ -4,7 +4,12 @@
 const spawn = require('child_process').spawn
 const fs = require('fs')
 const path = require('path')
+
+// Because short commit message are not in `.git/COMMIT_EDITMSG`,
+// but in `.git/COMMIT_EDITMSG message`. this not trigger commit parsing
 const messageFile = process.env.GIT_PARAMS
+
+console.log('test')
 
 /*
   If Branch are not Master or Develop
