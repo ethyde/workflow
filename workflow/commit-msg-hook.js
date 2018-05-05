@@ -9,8 +9,6 @@ const path = require('path')
 // but in `.git/COMMIT_EDITMSG message`. this not trigger commit parsing
 const messageFile = process.env.GIT_PARAMS
 
-console.log('test')
-
 /*
   If Branch are not Master or Develop
   If message title:
