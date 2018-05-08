@@ -10,7 +10,8 @@
   "buildCommand": "npm run build && node ./workflow/generatechangelog.js",
   "safeBump": true,
   "beforeChangelogCommand": false,
-  "changelogCommand":"git log --branches --not master --remotes --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit",
+  "changelogCommand":
+    "git log --branches --not master --remotes --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit",
   "requireCleanWorkingDir": true,
   "requireUpstream": true,
   "src": {

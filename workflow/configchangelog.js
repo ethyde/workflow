@@ -5,11 +5,7 @@ const path = require('path')
 
 const parserOpts = {
   headerPattern: /^(\w*)(?:\((.*)\))?: (.*)$/,
-  headerCorrespondence: [
-    'type',
-    'scope',
-    'subject'
-  ],
+  headerCorrespondence: ['type', 'scope', 'subject'],
   referenceActions: [
     'close',
     'closes',
@@ -103,7 +99,7 @@ const writerOpts = {
     // remove references that already appear in this commit subject
     // but keep reference for other issues
     if (commit.references.length > 1) {
-      commit.references = commit.references.filter((reference) => {
+      commit.references = commit.references.filter(reference => {
         return reference.action !== null
       })
     }
@@ -114,10 +110,22 @@ const writerOpts = {
   commitGroupsSort: 'title',
   commitsSort: ['scope', 'type'],
   noteGroupsSort: 'title',
-  mainTemplate: fs.readFileSync(path.join(__dirname, './templates/template.hbs'), 'utf8'),
-  headerPartial: fs.readFileSync(path.join(__dirname, './templates/header.hbs'), 'utf8'),
-  commitPartial: fs.readFileSync(path.join(__dirname, './templates/commit.hbs'), 'utf8'),
-  footerPartial: fs.readFileSync(path.join(__dirname, './templates/footer.hbs'), 'utf8')
+  mainTemplate: fs.readFileSync(
+    path.join(__dirname, './templates/template.hbs'),
+    'utf8'
+  ),
+  headerPartial: fs.readFileSync(
+    path.join(__dirname, './templates/header.hbs'),
+    'utf8'
+  ),
+  commitPartial: fs.readFileSync(
+    path.join(__dirname, './templates/commit.hbs'),
+    'utf8'
+  ),
+  footerPartial: fs.readFileSync(
+    path.join(__dirname, './templates/footer.hbs'),
+    'utf8'
+  )
 }
 
-module.exports = {parserOpts, writerOpts}
+module.exports = { parserOpts, writerOpts }

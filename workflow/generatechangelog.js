@@ -20,11 +20,16 @@ let options = {
   config: config
 }
 
-let changelogStream = conventionalChangelog(options, templateContext, gitRawCommitsOpts, config.parserOpts, config.writerOpts)
-  .on('error', (err) => {
-    if (err) throw err
-    process.exit(1)
-  })
+let changelogStream = conventionalChangelog(
+  options,
+  templateContext,
+  gitRawCommitsOpts,
+  config.parserOpts,
+  config.writerOpts
+).on('error', err => {
+  if (err) throw err
+  process.exit(1)
+})
 
 changelogStream
   .pipe(fs.createWriteStream(changelogFileOut))

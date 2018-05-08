@@ -25,9 +25,10 @@ const messageFile = process.env.GIT_PARAMS
   type(scope): [JIRA-000] subject separated by dash
 */
 
-const startsWithMergeBranch = (str) => str.indexOf('Merge branch') === 0
-const startsWithMergePR = (str) => str.indexOf('Merge pull request') === 0
-const areNotMergeOrPullRequestBranch = (str) => !startsWithMergeBranch(str) && !startsWithMergePR(str)
+const startsWithMergeBranch = str => str.indexOf('Merge branch') === 0
+const startsWithMergePR = str => str.indexOf('Merge pull request') === 0
+const areNotMergeOrPullRequestBranch = str =>
+  !startsWithMergeBranch(str) && !startsWithMergePR(str)
 
 const tagList = [
   `DFP-`,
@@ -47,13 +48,14 @@ const tagList = [
   `JIRA-`
 ]
 
-const getSubjectCommitFromBranchName = (currentBranchName) => {
+const getSubjectCommitFromBranchName = currentBranchName => {
   const splitBrancName = currentBranchName.split('/')
   const tagListLength = tagList.length
   const typeScope = splitBrancName[0].split('-')
 
   const type = typeScope[0]
-  const scope = typeof typeScope[1] !== 'undefined' ? `(${typeScope[1].toLowerCase()})` : ''
+  const scope =
+    typeof typeScope[1] !== 'undefined' ? `(${typeScope[1].toLowerCase()})` : ''
 
   const issue = splitBrancName[1]
   const subject = splitBrancName[2]
@@ -68,27 +70,33 @@ const getSubjectCommitFromBranchName = (currentBranchName) => {
     }
   }
 
-  messageString += subject.toLowerCase().split('-').join(' ').trim()
+  messageString += subject
+    .toLowerCase()
+    .split('-')
+    .join(' ')
+    .trim()
 
   return messageString
 }
 
 if (fs.existsSync(messageFile)) {
   const message = fs.readFileSync(messageFile, 'utf8')
-  const messagetpl = fs.readFileSync(path.join(__dirname, '/GITMESSAGE_TEMPLATE.txt'), 'utf8')
+  const messagetpl = fs.readFileSync(
+    path.join(__dirname, '/GITMESSAGE_TEMPLATE.txt'),
+    'utf8'
+  )
   const messageTitle = message.split('\n')[0]
 
-  const branchName = spawn('git', [
-    'rev-parse',
-    '--abbrev-ref',
-    'HEAD'
-  ])
+  const branchName = spawn('git', ['rev-parse', '--abbrev-ref', 'HEAD'])
 
   branchName.stdout.on('data', function (data) {
     const branchAreMasterOrDevelop = `${data}`.match(/(master|develop)/)
     let messageLines = message.split('\n')
 
-    if (!branchAreMasterOrDevelop && areNotMergeOrPullRequestBranch(messageTitle)) {
+    if (
+      !branchAreMasterOrDevelop &&
+      areNotMergeOrPullRequestBranch(messageTitle)
+    ) {
       const branchToSubjectName = getSubjectCommitFromBranchName(`${data}`)
       messageLines[0] = `${branchToSubjectName}${messagetpl}`
     } else {

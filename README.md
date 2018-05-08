@@ -1,6 +1,7 @@
 ![Logo of the project](./images/logo.sample.png)
 
 # Name of the project &middot; [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://<url-where-make-pr-for-this-project>)
+
 > Additional information or tag line
 
 A brief description of your project, what it is used for.
@@ -19,11 +20,12 @@ Here you should say what actually happens when you execute the code above.
 ## Developing
 
 ### Built With
+
 List main libraries, frameworks used including versions (React, Angular etc...)
 
 ### Prerequisites
-What is needed to set up the dev environment. For instance, global dependencies or any other tools. include download links.
 
+What is needed to set up the dev environment. For instance, global dependencies or any other tools. include download links.
 
 ### Setting up Dev
 
@@ -53,6 +55,7 @@ Here again you should state what actually happens when the code above gets
 executed.
 
 ### Deploying / Publishing
+
 give instructions on how to build and release a new version
 In case there's some step you have to take that publishes this project to a
 server, this is the right time to state it.
@@ -66,7 +69,6 @@ And again you'd need to tell what the previous code actually does.
 ## Versioning
 
 We can maybe use [SemVer](http://semver.org/) for versioning. For the versions available, see the [link to tags on this repository](/tags).
-
 
 ## Configuration
 

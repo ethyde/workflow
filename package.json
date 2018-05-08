@@ -28,8 +28,11 @@
     "lint": "./node_modules/.bin/eslint -c .eslintrc ./app/",
     "precommit": "npm run lint",
     "preparecommitmsg": "node ./workflow/commit-msg-hook.js",
-    "commitmsg": "./node_modules/.bin/commitlint --config ./workflow/commitlint.config.js --edit $GIT_PARAMS",
-    "release": "./node_modules/.bin/release-it --config ./workflow/release-it.json"
+    "commitmsg":
+      "./node_modules/.bin/commitlint --config ./workflow/commitlint.config.js --edit $GIT_PARAMS",
+    "release":
+      "./node_modules/.bin/release-it --config ./workflow/release-it.json",
+    "clean": "./node_modules/.bin/rimraf"
   },
   "devDependencies": {
     "@commitlint/cli": "^6.1.3",
