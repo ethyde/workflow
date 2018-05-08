@@ -1,0 +1,39 @@
+
+# <subject>
+# type(scope): [JIRA-000] clear subject sentence
+# First line cannot be longer than 72 characteres (under 50 are better)
+# Use the imperative mood in the subject line
+# A properly formed git commit subject line should always be able to complete the following sentence: If applied, this commit will <your subject line here> :
+
+# Possible <type> value :
+#   feat (new feature for the user, not about the build script)
+#   fix (bug fix for the user, not about the build script)
+#   docs (update the docs)
+#   typo (formating, missing semi-colons,etc; no production code change)
+#   refactor (refactoring production code : change var name, rewrite code,etc)
+#   test (add, remove, change, update tests and lint; no production code change)
+#   build (updating task, npm module, bundler, etc; no production code change
+
+# Possible <scope> value : <scope> should not be empty, possible value 
+#   init
+#   js
+#   structur
+#   semantic
+#   webserveur
+#   etc.
+
+# Should Containt a JIRA issue number [ISSUE-XXX]
+
+# <body>
+# Message Body :
+#   <body> message should be wrapper at 80 characteres
+#   Uses the imperative, present tense: “change” not “changed” nor “changes”
+#   Includes motivation for the change and contrasts with previous behavior
+#   Use the body to explain what and why vs. how.
+
+# <footer>
+# Message Footer : Référencing issue(s) and provide links to any relevant tickets, articles or other resources
+#   Closes/Fix/Resolve ISSUE-XXX (for closing an issue)
+# In case of multiple issues : Closes ISSUE-XYX, ISSUE-XYZ, ISSUE-AZV
+
+# Natif Commit Message Start here

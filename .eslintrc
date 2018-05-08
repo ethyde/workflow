@@ -1,0 +1,26 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+      "ecmaVersion": 6,
+      "ecmaFeatures": {
+          "impliedStrict": true,
+          "experimentalObjectRestSpread": true,
+          "jsx": true
+      },
+      "sourceType": "module"
+  },
+
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+
+  "extends": "standard",
+
+  "globals": {
+      "document": true,
+      "navigator": true,
+      "window": true
+  }
+}

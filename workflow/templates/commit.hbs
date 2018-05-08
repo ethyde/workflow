@@ -1,0 +1,41 @@
+{{!-- Commit --}}
+
+*{{#if scope}} **{{scope}}:**
+{{~/if}} {{#if subject}}
+  {{~subject}}
+{{~else}}
+  {{~header}}
+{{~/if}}
+
+{{~!-- commit link --}} {{#if @root.linkReferences~}}
+  ([{{hash}}](
+  {{~#if @root.repository}}
+    {{~#if @root.host}}
+      {{~@root.host}}/
+    {{~/if}}
+    {{~#if @root.owner}}
+      {{~@root.owner}}/
+    {{~/if}}
+    {{~@root.repository}}
+  {{~else}}
+    {{~@root.repoUrl}}
+  {{~/if}}/{{~@root.commit}}/{{hash}}))
+{{~else}}
+  {{~hash}}
+{{~/if}}
+
+{{~!-- commit references for action --}}
+{{~#if references~}}
+  {{~#each references}} {{#if @root.linkReferences~}}
+    {{~#if this.action~}}
+     {{~this.action}} : [{{this.prefix}}{{this.issue}}](
+      {{~#if @root.issue}}
+        {{~@root.issue}}/{{this.prefix}}{{this.issue}}
+      {{~else if @root.repository}}
+        {{~@root.host}}/{{~@root.owner}}/{{~@root.repository}}/{{this.prefix}}{{this.issue}}
+      {{~else}}
+        {{~@root.repoUrl}}
+      {{~/if}})
+    {{~/if}}
+  {{~/if}}{{/each}}
+{{~/if}}
