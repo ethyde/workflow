@@ -1,7 +1,7 @@
 {
   "name": "project-name",
   "description": "Project description",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "http://<homepage-project>",
   "author": "Firstname Lastname <mail@example.com> (http://example.com)",
   "contributors": [
@@ -28,10 +28,8 @@
     "lint": "./node_modules/.bin/eslint -c .eslintrc ./app/",
     "precommit": "npm run lint",
     "preparecommitmsg": "node ./workflow/commit-msg-hook.js",
-    "commitmsg":
-      "./node_modules/.bin/commitlint --config ./workflow/commitlint.config.js --edit $GIT_PARAMS",
-    "release":
-      "./node_modules/.bin/release-it --config ./workflow/release-it.json",
+    "commitmsg": "./node_modules/.bin/commitlint --config ./workflow/commitlint.config.js --edit $GIT_PARAMS",
+    "release": "./node_modules/.bin/release-it --config ./workflow/release-it.json",
     "clean": "./node_modules/.bin/rimraf"
   },
   "devDependencies": {
