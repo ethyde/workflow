@@ -90,7 +90,11 @@ if (fs.existsSync(messageFile)) {
   )
   const messageTitle = message.split('\n')[0]
 
-  const branchName = spawn('git', ['rev-parse', '--abbrev-ref', 'HEAD'])
+  const branchName = spawn('git', [
+    'rev-parse',
+    '--abbrev-ref',
+    'HEAD'
+  ])
 
   branchName.stdout.on('data', function (data) {
     const branchAreMasterOrDevelop = `${data}`.match(/(master|develop)/)
