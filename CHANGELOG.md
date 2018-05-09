@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## There is no Unpushed/Unreleased work - (2018-05-09)
 
+<a name="0.0.6"></a>
+## [0.0.6](https://bitbucket.org/prismamediadigital/pmd-advertising/compare/0.0.6%0D0.0.5#diff) (2018-05-09)
+
+### Bug Fixes
+
+* [JIRA-001](https://pmdtech.atlassian.net/browse/JIRA-001) no return after header unpush if no unpush ([d355d9f](https://bitbucket.org/prismamediadigital/pmd-advertising/commits/d355d9f)) 
 
 <a name="0.0.5"></a>
 ## [0.0.5](https://bitbucket.org/prismamediadigital/pmd-advertising/compare/0.0.5%0D0.0.4#diff) (2018-05-09)
