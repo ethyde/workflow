@@ -5,9 +5,9 @@ const fs = require('fs')
 const path = require('path')
 const process = require('child_process')
 
-const contextOpts = require('./contextchangelog')
-const config = require('./configchangelog')
-const generateHeader = require('./headerchangelog')
+const contextOpts = require('./changelog/contextchangelog')
+const config = require('./changelog/configchangelog')
+const generateHeader = require('./changelog/headerchangelog')
 
 const gitRawCommitsOpts = Object.assign({}, config.gitRawCommitsOpts)
 
