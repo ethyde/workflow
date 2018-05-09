@@ -55,7 +55,7 @@ const generateHeader = (stream) => {
 
   unpushedfile.on('close', function (code) {
     if (thereIsUnpsuhed !== true) {
-      unpushHeader = `## There is no Unpushed/Unreleased work - (${dateUnrealease})\n`
+      unpushHeader = `## There is no Unpushed/Unreleased work - (${dateUnrealease})`
       const completChangelog = `${header}${unpushHeader}${changelogfile}`
       fs.writeFileSync(stream, completChangelog, 'utf8', (err) => {
         if (err) throw err
