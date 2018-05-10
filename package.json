@@ -2,23 +2,23 @@
   "name": "project-name",
   "description": "Project description",
   "version": "0.0.8",
-  "homepage": "http://<homepage-project>",
-  "author": "Firstname Lastname <mail@example.com> (http://example.com)",
+  "homepage": "http://www.project-homepage.com",
+  "author": "Prenom Nom <mail@example.com> (http://example.com)",
   "contributors": [
-    "Firstname Lastname <mail@example.com> (http://example.com)",
+    "Prenom Nom <mail@example.com> (http://example.com)",
     {
-      "name": "Firstname Lastname",
+      "name": "Prenom Nom",
       "email": "mail@example.com",
       "url": "http://example.com"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://www.homepage-project.com"
+    "url": "git+https://www.project-repository.com"
   },
   "bugs": {
-    "url": "https://www.project-issues-tracker.com",
-    "email": "project@hostname.com"
+    "email": "project@hostname.com",
+    "url": "https://www.project-issues-tracker.com"
   },
   "issuesPrefix": [
     "DFP-",
@@ -35,7 +35,7 @@
     "BEA-",
     "PTV-",
     "CTV-",
-    "JIRA"
+    "JIRA-"
   ],
   "engines": {
     "node": "^8",

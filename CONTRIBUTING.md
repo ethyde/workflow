@@ -111,7 +111,7 @@ Because of most of the reasons above, we use [Feature-branch-workflow](https://w
 
   _Why:_
 
-  > `git commit -a` will start an editor which lets you separate the subject from the body. Read more about it in _section 1.3_.
+  > `git commit -a` will start an editor which lets you separate the subject from the body. Read more about it in [section 1.3](#writing-good-commit-messages).
 
 * Sync with remote to get changes you’ve missed.
 
@@ -233,7 +233,7 @@ Having a good guideline for creating commits and sticking to it makes working wi
 
   > `.env` files to store your variables and add them to `.gitignore` to be excluded. Instead, commit a `.env.example` which serves as a guide for developers. For production, you should still set your environment variables in the standard way. [read more](https://medium.com/@rafaelvidaurre/managing-environment-variables-in-node-js-2cb45a55195f)
 
-* It’s recommended to validate environment variables before your app starts. [Look at this sample](./configWithTest.sample.js) using `joi` to validate provided values.
+* It’s recommended to validate environment variables before your app starts.
 
   _Why:_
 
@@ -424,7 +424,7 @@ Having a good guideline for creating commits and sticking to it makes working wi
   > When you break down a config file for different purposes (database, API and so on); putting them in a folder with a very recognizable name such as `config` makes sense. Just remember not to make different config files for different environments. It doesn't scale cleanly, as more deploys of the app are created, new environment names are necessary.
   > Values to be used in config files should be provided by environment variables. [read more...](https://medium.com/@fedorHK/no-config-b3f1171eecd5)
 
-* Put your workflow scripts in a `./workflow` folder. This includes `bash` and `node` scripts. Related to generate `CHANGELOG.md`, release process, Git/NPM hooks, PULL_REQUEST and ISSUE templates, etc.
+* Put your workflow scripts in a `./workflow` folder. This includes `bash` and `node` scripts. Release process, Git/NPM hooks, PULL_REQUEST and ISSUE templates, etc.
 
   _Why:_
 
@@ -466,9 +466,9 @@ Having a good guideline for creating commits and sticking to it makes working wi
 
   > We simply prefer `eslint`, you don't have to. It has more rules supported, the ability to configure the rules, and ability to add custom rules.
 
-* We use [JavaScript Standard Style](https://standardjs.com/) for JavaScript, [Read more](https://www.gitbook.com/book/duk/airbnb-javascript-guidelines/details). Use the javascript style guide required by the project or your team.
+* We use [JavaScript Standard Style](https://standardjs.com/) for JavaScript, Use the javascript style guide required by the project or your team.
 
-* We use [Flow type style check rules for ESLint](https://github.com/gajus/eslint-plugin-flowtype) when using [FlowType](https://flow.org/).
+* You can use [Flow type style check rules for ESLint](https://github.com/gajus/eslint-plugin-flowtype) when using [FlowType](https://flow.org/).
 
   _Why:_
 
