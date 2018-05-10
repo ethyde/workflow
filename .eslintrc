@@ -1,12 +1,14 @@
 {
+  "extends": "standard",
+
   "parserOptions": {
-      "ecmaVersion": 6,
-      "ecmaFeatures": {
-          "impliedStrict": true,
-          "experimentalObjectRestSpread": true,
-          "jsx": true
-      },
-      "sourceType": "module"
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "experimentalObjectRestSpread": true,
+      "jsx": true
+    },
+    "sourceType": "module"
   },
 
   "env": {
@@ -15,11 +17,9 @@
     "jest": true
   },
 
-  "extends": "standard",
-
   "globals": {
-      "document": true,
-      "navigator": true,
-      "window": true
+    "document": true,
+    "navigator": true,
+    "window": true
   }
 }
