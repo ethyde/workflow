@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## There is no Unpushed/Unreleased work - (2018-05-10)
 
+<a name="0.0.8"></a>
+## [0.0.8](https://bitbucket.org/prismamediadigital/pmd-advertising/compare/0.0.8%0D0.0.7#diff) (2018-05-10)
+
+### Bug Fixes
+
+* [JIRA-003](https://pmdtech.atlassian.net/browse/JIRA-003) issues prefix in package.json ([b791fd0](https://bitbucket.org/prismamediadigital/pmd-advertising/commits/b791fd0))
+
 <a name="0.0.7"></a>
 ## [0.0.7](https://bitbucket.org/prismamediadigital/pmd-advertising/compare/0.0.7%0D0.0.6#diff) (2018-05-10)
 
