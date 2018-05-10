@@ -1,5 +1,8 @@
 'use strict'
 
+const path = require('path')
+const pkg = require(path.join(__dirname, '../package.json'))
+
 const commitlintConfig = {
   extends: ['@commitlint/config-conventional'],
   rules: {
@@ -8,23 +11,7 @@ const commitlintConfig = {
   },
   parserPreset: {
     parserOpts: {
-      issuePrefixes: [
-        `DFP-`,
-        `TRANS-`,
-        `TELOIS-`,
-        `FAC-`,
-        `FACV-`,
-        `NEON-`,
-        `VOI-`,
-        `GAL-`,
-        `CAM-`,
-        `CAC-`,
-        `CAP-`,
-        `BEA-`,
-        `PTC-`,
-        `CTV-`,
-        `JIRA-`
-      ]
+      issuePrefixes: pkg.issuesPrefix
     }
   }
 }

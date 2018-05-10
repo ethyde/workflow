@@ -14,12 +14,29 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://<homepage-project>"
+    "url": "git+https://www.homepage-project.com"
   },
   "bugs": {
-    "url": "https://<project-issues-tracker>",
+    "url": "https://www.project-issues-tracker.com",
     "email": "project@hostname.com"
   },
+  "issuesPrefix": [
+    "DFP-",
+    "TRANS-",
+    "TELOIS-",
+    "FAC-",
+    "FACV-",
+    "NEON-",
+    "VOI-",
+    "GAL-",
+    "CAM-",
+    "CAC-",
+    "CAP-",
+    "BEA-",
+    "PTV-",
+    "CTV-",
+    "JIRA"
+  ],
   "engines": {
     "node": "^8",
     "npm": "^5"

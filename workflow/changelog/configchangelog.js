@@ -2,6 +2,7 @@
 
 const fs = require('fs')
 const path = require('path')
+const pkg = require(path.join(__dirname, '../../package.json'))
 
 const parserOpts = {
   headerPattern: /^(\w*)(?:\((.*)\))?: (.*)$/,
@@ -17,25 +18,10 @@ const parserOpts = {
     'resolves',
     'resolved',
     'recette',
-    'production'
+    'production',
+    'recette'
   ],
-  issuePrefixes: [
-    `DFP-`,
-    `TRANS-`,
-    `TELOIS-`,
-    `FAC-`,
-    `FACV-`,
-    `NEON-`,
-    `VOI-`,
-    `GAL-`,
-    `CAM-`,
-    `CAC-`,
-    `CAP-`,
-    `BEA-`,
-    `PTC-`,
-    `CTV-`,
-    `JIRA-`
-  ],
+  issuePrefixes: pkg.issuesPrefix,
   noteKeywords: ['BREAKING CHANGE'],
   revertPattern: /^revert:\s([\s\S]*?)\s*This reverts commit (\w*)\./,
   revertCorrespondence: ['header', 'hash']

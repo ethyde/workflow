@@ -194,6 +194,8 @@ Having a good guideline for creating commits and sticking to it makes working wi
 
 * Use the body to explain **what** and **why** as opposed to **how**.
 
+* You can follow a commit convention like [Conventional Changelog](https://github.com/conventional-changelog/conventional-changelog) and a Commit-Linter like [commitlint](https://github.com/marionebl/commitlint).
+
 <a name="documentation"></a>
 
 ## 2. Documentation
@@ -203,6 +205,7 @@ Having a good guideline for creating commits and sticking to it makes working wi
 * Keep `README.md` updated as a project evolves.
 * Comment your code. Try to make it as clear as possible what you are intending with each major section.
 * Follow [ESDoc](https://esdoc.org/) or [JSDoc](http://usejsdoc.org/) comments conventions
+* Generate a `CHANGELOG.md` to keep track of evolution
 * If there is an open discussion on github or stackoverflow about the code or approach you're using, include the link in your comment.
 * Don't use comments as an excuse for a bad code. Keep your code clean.
 * Don't use clean code as an excuse to not comment at all.
@@ -554,8 +557,9 @@ Having a good guideline for creating commits and sticking to it makes working wi
 * Produce readable production logging. Ideally use logging libraries to be used in production mode (such as [winston](https://github.com/winstonjs/winston) or
   [node-bunyan](https://github.com/trentm/node-bunyan)).
 
-      _Why:_
-      > It makes your troubleshooting less unpleasant with colorization, timestamps, log to a file in addition to the console or even logging to a file that rotates daily. [read more...](https://blog.risingstack.com/node-js-logging-tutorial/)
+  _Why:_
+
+  > It makes your troubleshooting less unpleasant with colorization, timestamps, log to a file in addition to the console or even logging to a file that rotates daily. [read more...](https://blog.risingstack.com/node-js-logging-tutorial/)
 
 ---
 

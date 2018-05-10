@@ -5,6 +5,8 @@ const spawn = require('child_process').spawn
 const fs = require('fs')
 const path = require('path')
 
+const pkg = require(path.join(__dirname, '../package.json'))
+
 // Because short commit message are not in `.git/COMMIT_EDITMSG`,
 // but in `.git/COMMIT_EDITMSG message`. this not trigger commit parsing
 const messageFile = process.env.GIT_PARAMS
@@ -33,23 +35,7 @@ const startsWithMergePR = str => str.indexOf('Merge pull request') === 0
 const areNotMergeOrPullRequestBranch = str =>
   !startsWithMergeBranch(str) && !startsWithMergePR(str)
 
-const tagList = [
-  `DFP-`,
-  `TRANS-`,
-  `TELOIS-`,
-  `FAC-`,
-  `FACV-`,
-  `NEON-`,
-  `VOI-`,
-  `GAL-`,
-  `CAM-`,
-  `CAC-`,
-  `CAP-`,
-  `BEA-`,
-  `PTC-`,
-  `CTV-`,
-  `JIRA-`
-]
+const tagList = pkg.issuesPrefix
 
 const getSubjectCommitFromBranchName = currentBranchName => {
   const splitBrancName = currentBranchName.split('/')
@@ -63,23 +49,23 @@ const getSubjectCommitFromBranchName = currentBranchName => {
   const issue = splitBrancName[1]
   const subject = splitBrancName[2]
 
-  let messageString = `${type}${scope}:`
+  let subjectString = `${type}${scope}:`
 
   for (let index = 0; index < tagListLength; index++) {
     const brandTag = tagList[index]
     const matched = issue.match(new RegExp(`^${brandTag}\\d+`, 'i'))
     if (matched !== null) {
-      messageString += ` ${matched} `
+      subjectString += ` ${matched} `
     }
   }
 
-  messageString += subject
+  subjectString += subject
     .toLowerCase()
     .split('-')
     .join(' ')
     .trim()
 
-  return messageString
+  return subjectString
 }
 
 if (fs.existsSync(messageFile)) {
