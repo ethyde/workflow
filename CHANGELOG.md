@@ -6,6 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## There is no Unpushed/Unreleased work - (2018-05-10)
 
+<a name="0.0.10"></a>
+## [0.0.10](https://bitbucket.org/prismamediadigital/pmd-advertising/compare/0.0.10%0D0.0.9#diff) (2018-05-10)
+
+### Features
+
+* [JIRA-005](https://pmdtech.atlassian.net/browse/JIRA-005) add .editorconfig file ([575dbb7](https://bitbucket.org/prismamediadigital/pmd-advertising/commits/575dbb7))
+
 <a name="0.0.9"></a>
 ## [0.0.9](https://bitbucket.org/prismamediadigital/pmd-advertising/compare/0.0.9%0D0.0.8#diff) (2018-05-10)
 
