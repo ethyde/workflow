@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## There is no Unpushed/Unreleased work - (2018-05-10)
 
+<a name="0.0.11"></a>
+
+## [0.0.11](https://host.com/owner/repository/compare/0.0.11%0D0.0.10#diff) (2018-05-10)
+
+
+
 <a name="0.0.10"></a>
 
 ## [0.0.10](https://host.com/owner/repository/compare/0.0.10%0D0.0.9#diff) (2018-05-10)
