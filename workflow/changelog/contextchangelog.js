@@ -1,11 +1,10 @@
 'use strict'
 
 const contextOpts = {
-  // title: 'title-config',
-  issue: 'https://pmdtech.atlassian.net/browse',
-  host: 'https://bitbucket.org',
-  owner: 'prismamediadigital',
-  repository: 'pmd-advertising',
+  issue: 'https://issues-repository.com/browse', // must be the full url
+  host: 'https://host.com',
+  owner: 'owner',
+  repository: 'repository',
   commit: 'commits'
 }
 
