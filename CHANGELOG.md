@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## There is no Unpushed/Unreleased work - (2018-05-10)
 
+<a name="0.0.9"></a>
+## [0.0.9](https://bitbucket.org/prismamediadigital/pmd-advertising/compare/0.0.9%0D0.0.8#diff) (2018-05-10)
+
+
+
 <a name="0.0.8"></a>
 ## [0.0.8](https://bitbucket.org/prismamediadigital/pmd-advertising/compare/0.0.8%0D0.0.7#diff) (2018-05-10)
 
