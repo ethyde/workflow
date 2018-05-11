@@ -9,12 +9,12 @@
 #   feat (new feature for the user, not about the build script)
 #   fix (bug fix for the user, not about the build script)
 #   docs (update the docs)
-#   typo (formating, missing semi-colons,etc; no production code change)
+#   style (formating, missing semi-colons,etc; no production code change)
 #   refactor (refactoring production code : change var name, rewrite code,etc)
 #   test (add, remove, change, update tests and lint; no production code change)
 #   build (updating task, npm module, bundler, etc; no production code change
 
-# Possible <scope> value : <scope> should not be empty, possible value 
+# Possible <scope> value (optional) : <scope> should not be empty, possible value
 #   init
 #   js
 #   structur
@@ -22,7 +22,7 @@
 #   webserveur
 #   etc.
 
-# Should Containt a JIRA issue number [ISSUE-XXX]
+# Should Containt a JIRA issue number [ISSUE-XXX] (optional)
 
 # <body>
 # Message Body :
