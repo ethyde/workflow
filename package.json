@@ -1,7 +1,7 @@
 {
   "name": "project-name",
   "description": "Project description",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "homepage": "http://www.project-homepage.com",
   "author": "Prenom Nom <mail@example.com> (http://example.com)",
   "contributors": [
