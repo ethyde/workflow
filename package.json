@@ -38,8 +38,8 @@
     "JIRA-"
   ],
   "engines": {
-    "node": "^8",
-    "npm": "^5"
+    "node": ">=8 <9",
+    "npm": ">=5 <6"
   },
   "license": "UNLICENSED",
   "private": true,
