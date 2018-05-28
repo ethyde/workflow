@@ -1,9 +1,9 @@
 {
-  "name": "project-name",
-  "description": "Project description",
+  "name": "ethyde-workflow",
+  "description": "My Workflow : commit linting, CHANGELOG generator.",
   "version": "0.0.15",
   "homepage": "http://www.project-homepage.com",
-  "author": "Prenom Nom <mail@example.com> (http://example.com)",
+  "author": "Ethyde (https://github.com/ethyde/)",
   "contributors": [
     "Prenom Nom <mail@example.com> (http://example.com)",
     {
@@ -14,27 +14,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://www.project-repository.com"
+    "url": "git+https://github.com/ethyde/workflow"
   },
   "bugs": {
     "email": "project@hostname.com",
-    "url": "https://www.project-issues-tracker.com"
+    "url": "https://github.com/ethyde/workflow/issues"
   },
   "issuesPrefix": [
-    "DFP-",
-    "TRANS-",
-    "TELOIS-",
-    "FAC-",
-    "FACV-",
-    "NEON-",
-    "VOI-",
-    "GAL-",
-    "CAM-",
-    "CAC-",
-    "CAP-",
-    "BEA-",
-    "PTV-",
-    "CTV-",
+    "ISSUE-",
     "JIRA-"
   ],
   "engines": {
