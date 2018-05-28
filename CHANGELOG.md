@@ -4,7 +4,15 @@ All notable changes to this project will be documented in this file.
 The format of this CHANGELOG are based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## There is no Unpushed/Unreleased work - (2018-05-23)
+## There is no Unpushed/Unreleased work - (2018-05-28)
+
+<a name="0.0.16"></a>
+
+## [0.0.16](https://host.com/owner/repository/compare/0.0.16%0D0.0.15#diff) (2018-05-28)
+
+### Features
+
+* add somes infos ([33f6091](https://host.com/owner/repository/commits/33f6091))
 
 <a name="0.0.15"></a>
 
