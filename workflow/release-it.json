@@ -29,41 +29,11 @@
     "addUntrackedFiles": true
   },
   "npm": {
-    "publish": false
-  },
-  "github": {
-    "release": false,
-    "releaseName": "Release %s",
-    "preRelease": false,
-    "draft": false,
-    "tokenRef": "GITHUB_TOKEN",
-    "assets": null,
-    "host": null,
-    "timeout": 0
-  },
-  "dist": {
-    "repo": false,
-    "stageDir": ".stage",
-    "baseDir": "dist",
-    "files": ["**/*"],
-    "pkgFiles": null,
-    "commit": true,
-    "commitMessage": "Release %s",
-    "commitArgs": "",
-    "tag": true,
-    "tagName": "%s",
-    "tagAnnotation": "Release %s",
-    "push": true,
-    "pushArgs": "",
-    "beforeStageCommand": false,
-    "afterReleaseCommand": false,
-    "addUntrackedFiles": false,
-    "github": {
-      "release": false
-    },
-    "npm": {
-      "publish": false
-    }
+    "publish": true,
+    "publishPath": ".",
+    "tag": "latest",
+    "private": true,
+    "access": null
   },
   "prompt": {
     "src": {
@@ -73,14 +43,6 @@
       "push": true,
       "release": true,
       "publish": true
-    },
-    "dist": {
-      "status": false,
-      "commit": true,
-      "tag": false,
-      "push": true,
-      "release": false,
-      "publish": false
     }
   }
 }
