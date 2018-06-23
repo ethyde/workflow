@@ -11,7 +11,7 @@ A brief description of your project, what it is used for.
 A quick introduction of the minimal setup you need to get a hello world up &
 running.
 
-```shell
+```sh
 commands here
 ```
 
@@ -32,7 +32,7 @@ What is needed to set up the dev environment. For instance, global dependencies 
 Here's a brief intro about what a developer must do in order to start developing
 the project further:
 
-```shell
+```sh
 git clone https://github.com/your/your-project.git
 cd your-project/
 packagemanager install
@@ -45,7 +45,7 @@ And state what happens step-by-step. If there is any virtual environment, local 
 If your project needs some additional steps for the developer to build the
 project after some code changes, state them here. for example:
 
-```shell
+```sh
 ./configure
 make
 make install
@@ -60,7 +60,7 @@ give instructions on how to build and release a new version
 In case there's some step you have to take that publishes this project to a
 server, this is the right time to state it.
 
-```shell
+```sh
 packagemanager deploy your-project -s server.com -u username -p password
 ```
 
@@ -80,6 +80,6 @@ using the project.
 Describe and show how to run the tests with code examples.
 Explain what these tests test and why.
 
-```shell
+```sh
 Give an example
 ```
