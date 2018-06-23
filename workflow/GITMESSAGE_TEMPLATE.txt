@@ -1,39 +1,44 @@
 
 # <subject>
-# type(scope): [JIRA-000] clear subject sentence
-# First line cannot be longer than 72 characteres (under 50 are better)
-# Use the imperative mood in the subject line
-# A properly formed git commit subject line should always be able to complete the following sentence: If applied, this commit will <your subject line here> :
+#   The first line can not exceed 72 characters (less than 50 is better)
+#   A properly formed git commit object line should always be able to complete
+#   the following sentence: If it is applied, this commit will <your description here>
 
-# Possible <type> value :
-#   feat (new feature for the user, not about the build script)
-#   fix (bug fix for the user, not about the build script)
-#   docs (update the docs)
-#   style (formating, missing semi-colons,etc; no production code change)
-#   refactor (refactoring production code : change var name, rewrite code,etc)
-#   test (add, remove, change, update tests and lint; no production code change)
-#   build (updating task, npm module, bundler, etc; no production code change
+# the subject is composed of:
+#   <type> (scope): [ISSUE-XXXX] <description of the subject treated>
 
-# Possible <scope> value (optional) : <scope> should not be empty, possible value
+# Possible value for <type>:
+#   feat (new feature for the user, not for the build script)
+#   fix (bug fix for the user, not for the build script)
+#   docs (update documents)
+#   style (formatting, missing semicolons, etc ... no change in production code)
+#   refactor (refactoring the production code: changing the name of the variable, rewriting the code, etc.)
+#   test (add, delete, modify, update tests and fluff, no change of production code)
+#   build (update task, npm module, bundler, etc), no change of production code
+
+# Possible value for <scope> (optional):
 #   init
 #   js
-#   structur
-#   semantic
-#   webserveur
+#   structural
+#   semantics
+#   webserver
 #   etc.
 
-# Should Containt a JIRA issue number [ISSUE-XXX] (optional)
+# Should Contain a JIRA ticket number [NUMBER-XXX] (optional)
+
+# Use imperative mood for <description>
 
 # <body>
-# Message Body :
-#   <body> message should be wrapper at 80 characteres
-#   Uses the imperative, present tense: “change” not “changed” nor “changes”
-#   Includes motivation for the change and contrasts with previous behavior
-#   Use the body to explain what and why vs. how.
+#   Body of the message:
+#   The message should be encapsulated to 80 characters
+#   Use the imperative, present: "change" not "changed" or "change"
+#   Includes motivation for change and contrast with previous behavior
+#   Use the body to explain what and why and how.
 
 # <footer>
-# Message Footer : Référencing issue(s) and provide links to any relevant tickets, articles or other resources
-#   Closes/Fix/Resolve ISSUE-XXX (for closing an issue)
-# In case of multiple issues : Closes ISSUE-XYX, ISSUE-XYZ, ISSUE-AZV
+#   Footer of the message: Refer to the problem (s) and provide links to relevant posts, articles or other resources
+#   Closes / Fix / Resolve ISSUE-XXX (to close a problem)
+#   In case of multiple problems: ISSUE-XYX farm, ISSUE-XYZ, ISSUE-AZV
+#   Use BREAKING CHANGES and fully describe why and how to handle it
 
-# Natif Commit Message Start here
+# Native Commit Message Start Here
