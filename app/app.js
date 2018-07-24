@@ -1,5 +1,5 @@
 function calcul (a, b, c) {
-  return a
+  return a + b
 }
 
 export default calcul
