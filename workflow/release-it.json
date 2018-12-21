@@ -1,48 +1,84 @@
 {
-  "non-interactive": false,
-  "dry-run": false,
-  "verbose": false,
-  "debug": false,
-  "force": false,
-  "pkgFiles": ["package.json", "package-lock.json"],
-  "increment": "patch",
+  "increment": null,
   "preReleaseId": null,
-  "buildCommand": "npm run build && node ./workflow/generatechangelog.js",
-  "safeBump": true,
-  "beforeChangelogCommand": false,
-  "changelogCommand":
-    "git log --branches --not master --remotes --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit",
-  "requireCleanWorkingDir": true,
-  "requireUpstream": true,
-  "src": {
+  "pkgFiles": ["package.json", "package-lock.json"],
+  "scripts": {
+    "beforeStart": null,
+    "beforeBump": null,
+    "afterBump": null,
+    "beforeStage": "npm run build && node ./workflow/generatechangelog.js",
+    "changelog":     "git log --branches --not master --remotes --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit",
+    "afterRelease": null
+  },
+  "git": {
+    "addUntrackedFiles": false,
     "commit": true,
-    "commitMessage": "Release %s",
+    "commitMessage": "Release ${version}",
     "commitArgs": "--no-verify",
-    "tag": true,
-    "tagName": "%s",
-    "tagAnnotation": "Release %s",
     "push": true,
     "pushArgs": "",
-    "pushRepo": null,
-    "beforeStartCommand": false,
-    "afterReleaseCommand": false,
-    "addUntrackedFiles": true
+    "pushRepo": "origin",
+    "requireCleanWorkingDir": true,
+    "requireUpstream": true,
+    "tag": true,
+    "tagName": "${version}",
+    "tagAnnotation": "Release ${version}",
+    "tagArgs": ""
   },
   "npm": {
     "publish": true,
     "publishPath": ".",
     "tag": "latest",
-    "private": true,
-    "access": null
+    "private": false,
+    "access": null,
+    "otp": null
   },
-  "prompt": {
-    "src": {
-      "status": false,
+  "github": {
+    "release": false,
+    "releaseName": "Release ${version}",
+    "preRelease": false,
+    "draft": false,
+    "tokenRef": "GITHUB_TOKEN",
+    "assets": null,
+    "host": null,
+    "timeout": 0,
+    "proxy": null
+  },
+  "dist": {
+    "repo": false,
+    "stageDir": ".stage",
+    "baseDir": "dist",
+    "files": ["**/*"],
+    "pkgFiles": null,
+    "scripts": {
+      "beforeStage": null,
+      "afterRelease": null
+    },
+    "git": {
+      "addUntrackedFiles": false,
       "commit": true,
       "tag": true,
+      "push": true
+    },
+    "github": {
+      "release": false
+    },
+    "npm": {
+      "publish": false
+    }
+  },
+  "prompt": {
+    "commit": true,
+    "tag": true,
+    "push": true,
+    "release": true,
+    "publish": true,
+    "dist": {
+      "commit": true,
+      "tag": false,
       "push": true,
-      "release": true,
-      "publish": true
+      "release": false,
+      "publish": false
     }
   }
 }
