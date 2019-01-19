@@ -10,7 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.1.1](https://host.com/owner/repository/compare/0.1.1%0D0.1.0#diff) (2019-01-19)
 
+### Bug Fixes
 
+* update release it after commitArgs fix ([7ea9a49](https://host.com/owner/repository/commits/7ea9a49))
 
 <a name="0.1.0"></a>
 
