@@ -1,5 +1,5 @@
 {
-  "increment": null,
+  "increment": "conventional",
   "preReleaseId": null,
   "pkgFiles": ["package.json", "package-lock.json"],
   "scripts": {
@@ -26,7 +26,7 @@
     "tagArgs": ""
   },
   "npm": {
-    "publish": true,
+    "publish": false,
     "publishPath": ".",
     "tag": "latest",
     "private": false,
@@ -44,41 +44,19 @@
     "timeout": 0,
     "proxy": null
   },
-  "dist": {
-    "repo": false,
-    "stageDir": ".stage",
-    "baseDir": "dist",
-    "files": ["**/*"],
-    "pkgFiles": null,
-    "scripts": {
-      "beforeStage": null,
-      "afterRelease": null
-    },
-    "git": {
-      "addUntrackedFiles": false,
-      "commit": true,
-      "tag": true,
-      "push": true
-    },
-    "github": {
-      "release": false
-    },
-    "npm": {
-      "publish": false
-    }
+  "gitlab": {
+    "release": false,
+    "releaseName": "Release ${version}",
+    "releaseNotes": null,
+    "tokenRef": "GITLAB_TOKEN",
+    "assets": null,
+    "origin": null
   },
   "prompt": {
     "commit": true,
     "tag": true,
     "push": true,
     "release": true,
-    "publish": true,
-    "dist": {
-      "commit": true,
-      "tag": false,
-      "push": true,
-      "release": false,
-      "publish": false
-    }
+    "publish": false
   }
 }
