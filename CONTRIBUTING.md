@@ -563,24 +563,25 @@ Having a good guideline for creating commits and sticking to it makes working wi
 
 ---
 
-Sources:  
-[Project Guidelines](https://github.com/elsewhencode/project-guidelines),  
-[Contributing to Atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md),  
-[Contributor Covenant](https://www.contributor-covenant.org/),  
-[RisingStack Engineering](https://blog.risingstack.com/),  
-[Mozilla Developer Network](https://developer.mozilla.org/),  
-[Heroku Dev Center](https://devcenter.heroku.com),  
-[Airbnb/javascript](https://github.com/airbnb/javascript),  
-[Atlassian Git tutorials](https://www.atlassian.com/git/tutorials),  
+Sources:
+[Project Guidelines](https://github.com/elsewhencode/project-guidelines),
+[Contributing to Atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md),
+[Contributor Covenant](https://www.contributor-covenant.org/),
+[RisingStack Engineering](https://blog.risingstack.com/),
+[Mozilla Developer Network](https://developer.mozilla.org/),
+[Heroku Dev Center](https://devcenter.heroku.com),
+[Airbnb/javascript](https://github.com/airbnb/javascript),
+[Atlassian Git tutorials](https://www.atlassian.com/git/tutorials),
 [Commit Often, Perfect Later, Publish Once: Git Best Practices](https://sethrobertson.github.io/GitBestPractices/)
 
-[Keep a CHANGELOG](https://keepachangelog.com/fr/1.0.0/)  
-[Angular CHANGELOG Guideline](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#)  
+[Keep a CHANGELOG](https://keepachangelog.com/fr/1.0.0/)
+[Angular CHANGELOG Guideline](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#)
 [Conventional Changelog](https://github.com/marionebl/commitlint/tree/master/@commitlint/config-conventional)
 
-README & CONTRIBUTING from [Project Guidelines](https://github.com/elsewhencode/project-guidelines),  
+README & CONTRIBUTING from [Project Guidelines](https://github.com/elsewhencode/project-guidelines),
 ISSUE_TEMPLATE & PULL_REQUEST_TEMPLATE from [Open Source Templates](https://github.com/TalAter/open-source-templates)
 
 Others Ressources :
 
+[12factorApp](https://12factor.net/fr/)
 [ShieldsIO](https://shields.io/) Get Badges for your project
