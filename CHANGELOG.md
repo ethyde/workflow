@@ -4,7 +4,15 @@ All notable changes to this project will be documented in this file.
 The format of this CHANGELOG are based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## There is no Unpushed/Unreleased work - (2019-01-19)
+## There is no Unpushed/Unreleased work - (2019-01-21)
+
+<a name="0.1.2"></a>
+
+## [0.1.2](https://host.com/owner/repository/compare/0.1.2%0D0.1.1#diff) (2019-01-21)
+
+### Features
+
+* 12factorApp en tant que source d'information ([6d5ee8d](https://host.com/owner/repository/commits/6d5ee8d))
 
 <a name="0.1.1"></a>
 
