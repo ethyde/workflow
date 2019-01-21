@@ -6,6 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## There is no Unpushed/Unreleased work - (2019-01-21)
 
+<a name="0.1.3"></a>
+
+## [0.1.3](https://host.com/owner/repository/compare/0.1.3%0D0.1.2#diff) (2019-01-21)
+
+### Features
+
+* remove verbose from cli ([db7ccbf](https://host.com/owner/repository/commits/db7ccbf))
+
 <a name="0.1.2"></a>
 
 ## [0.1.2](https://host.com/owner/repository/compare/0.1.2%0D0.1.1#diff) (2019-01-21)
