@@ -1,7 +1,7 @@
 {
   "name": "ethyde-workflow",
   "description": "My Workflow : commit linting, CHANGELOG generator.",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "homepage": "http://www.project-homepage.com",
   "author": "Ethyde (https://github.com/ethyde/)",
   "contributors": [
