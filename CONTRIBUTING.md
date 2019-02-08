@@ -23,7 +23,7 @@
 
 ## 1. Git
 
-![Git](/images/branching.png)
+![Git](https://raw.githubusercontent.com/elsewhencode/project-guidelines/master/images/branching.png)
 
 <a name="some-git-rules"></a>
 
@@ -200,7 +200,7 @@ Having a good guideline for creating commits and sticking to it makes working wi
 
 ## 2. Documentation
 
-![Documentation](/images/documentation.png)
+![Documentation](https://raw.githubusercontent.com/elsewhencode/project-guidelines/master/images/documentation.png)
 
 * Keep `README.md` updated as a project evolves.
 * Comment your code. Try to make it as clear as possible what you are intending with each major section.
@@ -215,7 +215,7 @@ Having a good guideline for creating commits and sticking to it makes working wi
 
 ## 3. Environments
 
-![Environments](/images/laptop.png)
+![Environments](https://raw.githubusercontent.com/elsewhencode/project-guidelines/master/images/laptop.png)
 
 * Define separate `development`, `test` and `production` environments if needed.
 
@@ -327,7 +327,7 @@ Having a good guideline for creating commits and sticking to it makes working wi
 
 ## 5. Testing
 
-![Testing](/images/testing.png)
+![Testing](https://raw.githubusercontent.com/elsewhencode/project-guidelines/master/images/testing.png)
 
 * Have a `test` mode environment if needed.
 
@@ -377,7 +377,7 @@ Having a good guideline for creating commits and sticking to it makes working wi
 
 ## 6. Structure and Naming
 
-![Structure and Naming](/images/folder-tree.png)
+![Structure and Naming](https://raw.githubusercontent.com/elsewhencode/project-guidelines/master/images/folder-tree.png)
 
 * Organize your files around product features / pages / components, not roles. Also, place your test files next to their implementation.
 
@@ -440,7 +440,7 @@ Having a good guideline for creating commits and sticking to it makes working wi
 
 ## 7. Code style
 
-![Code style](/images/code-style.png)
+![Code style](https://raw.githubusercontent.com/elsewhencode/project-guidelines/master/images/code-style.png)
 
 <a name="code-style-check"></a>
 
@@ -546,7 +546,7 @@ Having a good guideline for creating commits and sticking to it makes working wi
 
 ## 8. Logging
 
-![Logging](/images/logging.png)
+![Logging](https://raw.githubusercontent.com/elsewhencode/project-guidelines/master/images/logging.png)
 
 * Avoid client-side console logs in production
 
@@ -564,6 +564,7 @@ Having a good guideline for creating commits and sticking to it makes working wi
 ---
 
 Sources:
+
 [Project Guidelines](https://github.com/elsewhencode/project-guidelines),
 [Contributing to Atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md),
 [Contributor Covenant](https://www.contributor-covenant.org/),
