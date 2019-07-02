@@ -1,29 +1,24 @@
 {
-  "increment": "conventional",
   "preReleaseId": null,
-  "pkgFiles": ["package.json", "package-lock.json"],
-  "scripts": {
-    "beforeStart": null,
-    "beforeBump": null,
-    "afterBump": null,
-    "beforeStage": "npm run build && node ./workflow/generatechangelog.js",
-    "changelog":     "git log --branches --not master --remotes --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit",
-    "afterRelease": null
+  "hooks": {
+    "before:release": "npm run build"
   },
   "git": {
+    "changelog": "git log --branches --not master --remotes --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit",
+    "requireCleanWorkingDir": false,
+    "requireUpstream": true,
+    "requireCommits": false,
     "addUntrackedFiles": false,
     "commit": true,
     "commitArgs": "--no-verify",
     "commitMessage": "Release ${version}",
-    "push": true,
-    "pushArgs": "",
-    "pushRepo": "origin",
-    "requireCleanWorkingDir": false,
-    "requireUpstream": true,
     "tag": true,
     "tagName": "${version}",
     "tagAnnotation": "Release ${version}",
-    "tagArgs": ""
+    "tagArgs": "",
+    "push": true,
+    "pushArgs": "--follow-tags",
+    "pushRepo": "origin"
   },
   "npm": {
     "publish": false,
@@ -51,5 +46,11 @@
     "tokenRef": "GITLAB_TOKEN",
     "assets": null,
     "origin": null
+  },
+  "plugins": {
+    "./workflow/generatechangelog.js": {
+      "preset": "angular",
+      "infile": "../CHANGELOG.md"
+    }
   }
 }

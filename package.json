@@ -1,7 +1,7 @@
 {
   "name": "ethyde-workflow",
   "description": "My Workflow : commit linting, CHANGELOG generator.",
-  "version": "0.1.6",
+  "version": "0.1.66",
   "homepage": "http://www.project-homepage.com",
   "author": "Ethyde (https://github.com/ethyde/)",
   "contributors": [
@@ -42,26 +42,33 @@
     "dev": "$npm_package_config_defineEnv NODE_ENV=development",
     "test": "$npm_package_config_defineEnv NODE_ENV=test",
     "lint": "./node_modules/.bin/eslint --config .eslintrc.js ./workflow",
-    "precommit": "npm run lint",
-    "preparecommitmsg": "node ./workflow/commit-msg-hook.js",
-    "commitmsg": "./node_modules/.bin/commitlint --config ./workflow/commitlint.config.js --edit $GIT_PARAMS",
-    "release": "./node_modules/.bin/release-it --config ./workflow/release-it.json --disable-metrics",
+    "release": "./node_modules/.bin/release-it --config ./workflow/release-it.json --disable-metrics --verbose",
     "clean": "./node_modules/.bin/rimraf"
   },
   "devDependencies": {
-    "@commitlint/cli": "^7.5.0",
-    "@commitlint/config-conventional": "^7.5.0",
-    "conventional-changelog-cli": "^2.0.11",
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
+    "@release-it/conventional-changelog": "^1.1.0",
+    "conventional-changelog-cli": "^2.0.21",
+    "conventional-recommended-bump": "^5.0.0",
     "cross-env": "^5.2.0",
-    "eslint": "^5.13.0",
+    "eslint": "^6.0.1",
     "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.16.0",
-    "eslint-plugin-node": "^8.0.1",
-    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
-    "husky": "^1.3.1",
-    "release-it": "^10.1.0",
-    "rimraf": "^2.6.3"
+    "husky": "^3.0.0",
+    "release-it": "^12.3.0",
+    "rimraf": "^2.6.3",
+    "semver": "^6.2.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "commit-msg": "./node_modules/.bin/commitlint --config ./workflow/commitlint.config.js --edit $HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run lint",
+      "prepare-commit-msg": "node ./workflow/commit-msg-hook.js"
+    }
+  }
 }

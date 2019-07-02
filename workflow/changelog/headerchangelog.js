@@ -1,6 +1,7 @@
 'use strict'
 
 const fs = require('fs')
+const path = require('path')
 const spawn = require('child_process').spawn
 
 const header = `# Changelog
@@ -26,6 +27,7 @@ if (thisMonth < 10) {
 let thereIsUnpsuhed = false
 
 const generateHeader = (stream) => {
+  // let changelogFileIn = path.resolve(__dirname, '../../CHANGELOG.md')
   const unpushedfile = spawn('git', [
     'log',
     '--branches',
