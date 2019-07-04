@@ -1,7 +1,7 @@
 {
   "name": "ethyde-workflow",
   "description": "My Workflow : commit linting, CHANGELOG generator.",
-  "version": "0.1.66",
+  "version": "0.1.8",
   "homepage": "http://www.project-homepage.com",
   "author": "Ethyde (https://github.com/ethyde/)",
   "contributors": [
@@ -49,6 +49,7 @@
     "@commitlint/cli": "^8.0.0",
     "@commitlint/config-conventional": "^8.0.0",
     "@release-it/conventional-changelog": "^1.1.0",
+    "babel-eslint": "^10.0.2",
     "conventional-changelog-cli": "^2.0.21",
     "conventional-recommended-bump": "^5.0.0",
     "cross-env": "^5.2.0",
@@ -63,12 +64,5 @@
     "rimraf": "^2.6.3",
     "semver": "^6.2.0"
   },
-  "dependencies": {},
-  "husky": {
-    "hooks": {
-      "commit-msg": "./node_modules/.bin/commitlint --config ./workflow/commitlint.config.js --edit $HUSKY_GIT_PARAMS",
-      "pre-commit": "npm run lint",
-      "prepare-commit-msg": "node ./workflow/commit-msg-hook.js"
-    }
-  }
+  "dependencies": {}
 }

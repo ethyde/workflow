@@ -1,11 +1,9 @@
-'use strict'
-const { Plugin } = require('release-it');
+const { Plugin } = require('release-it')
 const semver = require('semver')
-const conventionalChangelog = require('conventional-changelog');
+const conventionalChangelog = require('conventional-changelog')
 const conventionalRecommendedBump = require('conventional-recommended-bump')
 const fs = require('fs')
 const path = require('path')
-const process = require('child_process')
 
 class CustomChangelog extends Plugin {
   static disablePlugin () {
@@ -24,33 +22,32 @@ class CustomChangelog extends Plugin {
         if (increment) {
           this.log.warn(
             `Recommended bump is "${releaseType}", but is overridden with "${increment}".`
-          );
+          )
           releaseType = increment
         }
         if (increment && semver.valid(increment)) {
-          console.log('>>> increment :', increment)
-          resolve(increment);
+          resolve(increment)
         } else if (releaseType) {
-          const type = isPreRelease ? `pre${releaseType}` : releaseType;
-          resolve(semver.inc(latestVersion, type, preReleaseId));
+          const type = isPreRelease ? `pre${releaseType}` : releaseType
+          resolve(semver.inc(latestVersion, type, preReleaseId))
         } else {
-          resolve(null);
+          resolve(null)
         }
       })
     })
   }
 
   getChangelogStream (options = {}) {
-    const contextOpts = require('./changelog/contextchangelog');
-    const config = require('./changelog/configchangelog');
+    const contextOpts = require('./changelog/contextchangelog')
+    const config = require('./changelog/configchangelog')
 
-    const gitRawCommitsOpts = Object.assign({}, config.gitRawCommitsOpts);
+    const gitRawCommitsOpts = Object.assign({}, config.gitRawCommitsOpts)
 
-    let templateContext = contextOpts;
+    let templateContext = contextOpts
 
     options = Object.assign(options, {
       config: config
-    });
+    })
 
     return conventionalChangelog(
       options,
@@ -58,7 +55,7 @@ class CustomChangelog extends Plugin {
       gitRawCommitsOpts,
       config.parserOpts,
       config.writerOpts
-    );
+    )
   }
 
   getChangelog (options) {
@@ -81,45 +78,45 @@ class CustomChangelog extends Plugin {
     })
   }
 
-  async writeChangelog () {
-    const generateHeader = require('./changelog/headerchangelog')
-    const { infile } = this.options
-    let { changelog } = this.config.getContext()
-    let changelogFileOut = path.resolve(__dirname, infile)
+  // async writeChangelog () {
+  //   const generateHeader = require('./changelog/headerchangelog')
+  //   const { infile } = this.options
+  //   let { changelog } = this.config.getContext()
+  //   let changelogFileOut = path.resolve(__dirname, infile)
 
-    let hasInfile = false;
-    try {
-      fs.accessSync(infile);
-      hasInfile = true;
-    } catch (err) {
-      this.debug(err);
-    }
+  //   let hasInfile = false;
+  //   try {
+  //     fs.accessSync(infile);
+  //     hasInfile = true;
+  //   } catch (err) {
+  //     this.debug(err);
+  //   }
 
-    if (!hasInfile) {
-      changelog = await this.getChangelog()
-      // changelog = await this.getChangelog({ releaseCount: 0 })
-      this.debug({ changelog });
-    }
+  //   if (!hasInfile) {
+  //     changelog = await this.getChangelog()
+  //     // changelog = await this.getChangelog({ releaseCount: 0 })
+  //     this.debug({ changelog });
+  //   }
 
-    // await new Promise((resolve, reject) => {
-    //   // prependFile(infile, changelog + EOL + EOL, err => {
-    //   //   if (err) return reject(err);
-    //   //   resolve();
-    //   // })
-    //   // changelog.on('finish', () => {
-    //   //   console.log('>>> Write Changelog', changelogFileOut)
-    //   //   resolve(generateHeader(changelogFileOut))
-    //   // })
-    //   // resolve(generateHeader(changelog))
-    //   // changelog.on('finish', () => {
-    //   //   console.log('>>> Finish')
-    //   // })
-    // })
+  //   // await new Promise((resolve, reject) => {
+  //   //   // prependFile(infile, changelog + EOL + EOL, err => {
+  //   //   //   if (err) return reject(err);
+  //   //   //   resolve();
+  //   //   // })
+  //   //   // changelog.on('finish', () => {
+  //   //   //   console.log('>>> Write Changelog', changelogFileOut)
+  //   //   //   resolve(generateHeader(changelogFileOut))
+  //   //   // })
+  //   //   // resolve(generateHeader(changelog))
+  //   //   // changelog.on('finish', () => {
+  //   //   //   console.log('>>> Finish')
+  //   //   // })
+  //   // })
 
-    if (!hasInfile) {
-      await this.exec(`git add ${infile}`);
-    }
-  }
+  //   if (!hasInfile) {
+  //     await this.exec(`git add ${infile}`);
+  //   }
+  // }
 
   async beforeRelease () {
     const { infile } = this.options
