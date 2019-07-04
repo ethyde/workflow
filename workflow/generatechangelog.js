@@ -58,7 +58,7 @@ class CustomChangelog extends Plugin {
     )
   }
 
-  getChangelog (options) {
+  generateChangelog (options) {
     return new Promise((resolve, reject) => {
       const generateHeader = require('./changelog/headerchangelog')
       const { infile } = this.options
@@ -70,8 +70,7 @@ class CustomChangelog extends Plugin {
       changelogStream
         .pipe(fs.createWriteStream(changelogFileIn))
         .on('finish', () => {
-          console.log('>>> Write Changelog', generateHeader(changelogFileOut))
-          resolve()
+          resolve(generateHeader(changelogFileOut))
         })
       changelogStream.on('error', reject)
       // resolve(changelogStream)
@@ -121,7 +120,7 @@ class CustomChangelog extends Plugin {
   async beforeRelease () {
     const { infile } = this.options
     const { isDryRun } = this.global
-    const changelog = await this.getChangelog({ releaseCount: 0 })
+    const changelog = await this.generateChangelog({ releaseCount: 0 })
     // console.log('>>> await changelog :', changelog)
     this.debug({ changelog })
     this.config.setContext({ changelog })
