@@ -4,37 +4,54 @@ All notable changes to this project will be documented in this file.
 The format of this CHANGELOG are based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## There is no Unpushed/Unreleased work - (2019-07-04)
+## There is no Unpushed/Unreleased work - (2019-07-05)
+
+<a name="0.1.49"></a>
+
+## [0.1.49](https://host.com/owner/repository/compare/0.1.49%0D0.1.8#diff) (2019-07-05)
+
+
 
 <a name="0.1.8"></a>
 
 ## [0.1.8](https://host.com/owner/repository/compare/0.1.8%0D0.1.7#diff) (2019-07-04)
 
+### Styles
 
+* fix some typo in contributing.md and remove some log ([9ad52f5](https://host.com/owner/repository/commits/9ad52f5))
 
 <a name="0.1.7"></a>
 
 ## [0.1.7](https://host.com/owner/repository/compare/0.1.7%0D0.1.6#diff) (2019-07-04)
 
+### Build
 
+* update husky and release-it, functionnal but not optimal ([7f4b3d6](https://host.com/owner/repository/commits/7f4b3d6))
+* update dependencies ([0c70df0](https://host.com/owner/repository/commits/0c70df0))
 
 <a name="0.1.6"></a>
 
 ## [0.1.6](https://host.com/owner/repository/compare/0.1.6%0D0.1.5#diff) (2019-02-08)
 
+### Documentation
 
+* correct url for image in README ([d06d5a7](https://host.com/owner/repository/commits/d06d5a7))
 
 <a name="0.1.5"></a>
 
 ## [0.1.5](https://host.com/owner/repository/compare/0.1.5%0D0.1.4#diff) (2019-02-08)
 
+### Build
 
+* remove prompt config for release-it ([e3de1e2](https://host.com/owner/repository/commits/e3de1e2))
 
 <a name="0.1.4"></a>
 
 ## [0.1.4](https://host.com/owner/repository/compare/0.1.4%0D0.1.3#diff) (2019-02-08)
 
+### Build
 
+* update dependencies ([c97ae90](https://host.com/owner/repository/commits/c97ae90))
 
 <a name="0.1.3"></a>
 
@@ -58,13 +75,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Bug Fixes
 
-* update release it after commitArgs fix ([7ea9a49](https://host.com/owner/repository/commits/7ea9a49))
+* update release it after commitArgs fix ([7ea9a49](https://host.com/owner/repository/commits/7ea9a49))### Build
+
+* update release-it ([93374c9](https://host.com/owner/repository/commits/93374c9))
 
 <a name="0.1.0"></a>
 
 # [0.1.0](https://host.com/owner/repository/compare/0.1.0%0D0.0.23#diff) (2018-12-21)
 
-### Features
+### Build
+
+* update dependencies ([8a4d92d](https://host.com/owner/repository/commits/8a4d92d))### Features
 
 * update config for release-it ([86a377a](https://host.com/owner/repository/commits/86a377a))
 
@@ -80,7 +101,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.22](https://host.com/owner/repository/compare/0.0.22%0D0.0.21#diff) (2018-06-30)
 
-### Features
+### Build
+
+* clean dependencies ([f3cd20c](https://host.com/owner/repository/commits/f3cd20c))### Features
 
 * test force version number ([763ecde](https://host.com/owner/repository/commits/763ecde))
 
@@ -96,25 +119,33 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.20](https://host.com/owner/repository/compare/0.0.20%0D0.0.19#diff) (2018-06-23)
 
+### Styles
 
+* rewrite templates files ([563cdb0](https://host.com/owner/repository/commits/563cdb0))
 
 <a name="0.0.19"></a>
 
 ## [0.0.19](https://host.com/owner/repository/compare/0.0.19%0D0.0.18#diff) (2018-06-23)
 
+### Styles
 
+* correct shell to sh for markdown files ([62814f3](https://host.com/owner/repository/commits/62814f3))
 
 <a name="0.0.18"></a>
 
 ## [0.0.18](https://host.com/owner/repository/compare/0.0.18%0D0.0.17#diff) (2018-06-20)
 
+### Build
 
+* update release-it configuration ([3ebee47](https://host.com/owner/repository/commits/3ebee47))
 
 <a name="0.0.17"></a>
 
 ## [0.0.17](https://host.com/owner/repository/compare/0.0.17%0D0.0.16#diff) (2018-06-16)
 
+### Build
 
+* update dependencies ([7cf4fee](https://host.com/owner/repository/commits/7cf4fee))
 
 <a name="0.0.16"></a>
 
@@ -136,13 +167,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.14](https://host.com/owner/repository/compare/0.0.14%0D0.0.13#diff) (2018-05-19)
 
+### Documentation
 
+* add code of conduct markdown file ([cf0eda3](https://host.com/owner/repository/commits/cf0eda3))
 
 <a name="0.0.13"></a>
 
 ## [0.0.13](https://host.com/owner/repository/compare/0.0.13%0D0.0.12#diff) (2018-05-19)
 
+### chore
 
+* add eslintignore file, change eslintrc to eslintrc.js ([2a8575f](https://host.com/owner/repository/commits/2a8575f))
 
 <a name="0.0.12"></a>
 
@@ -150,13 +185,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Features
 
-* [JIRA-005](https://issues-repository.com/browse/JIRA-005) test wording ([8ca226b](https://host.com/owner/repository/commits/8ca226b)) 
+* [JIRA-005](https://issues-repository.com/browse/JIRA-005) test wording ([8ca226b](https://host.com/owner/repository/commits/8ca226b)) ### Styles
+
+* [[JIRA-006](https://issues-repository.com/browse/JIRA-006)] fix some wording in gitmessage template ([fbf6dc1](https://host.com/owner/repository/commits/fbf6dc1))
 
 <a name="0.0.11"></a>
 
 ## [0.0.11](https://host.com/owner/repository/compare/0.0.11%0D0.0.10#diff) (2018-05-10)
 
+### Styles
 
+* better format markdown changelog file ([5580cfa](https://host.com/owner/repository/commits/5580cfa))
 
 <a name="0.0.10"></a>
 
@@ -170,7 +209,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.9](https://host.com/owner/repository/compare/0.0.9%0D0.0.8#diff) (2018-05-10)
 
+### Styles
 
+* [JIRA-004](https://issues-repository.com/browse/JIRA-004) fixe some wording ([bc8f366](https://host.com/owner/repository/commits/bc8f366)) 
 
 <a name="0.0.8"></a>
 
@@ -184,7 +225,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.7](https://host.com/owner/repository/compare/0.0.7%0D0.0.6#diff) (2018-05-10)
 
+### Styles
 
+* indent spawn arguments ([153d9c4](https://host.com/owner/repository/commits/153d9c4))
 
 <a name="0.0.6"></a>
 
@@ -214,9 +257,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.3](https://host.com/owner/repository/compare/0.0.3%0D0.0.2#diff) (2018-05-08)
 
+### typo
 
+* add bugs entry and sample person object for author ([47faee3](https://host.com/owner/repository/commits/47faee3))
 
 <a name="0.0.2"></a>
 
-## 0.0.2 (2018-05-08)
+## [0.0.2](https://host.com/owner/repository/compare/0.0.2%0D31368f0#diff) (2018-05-08)
 
+### typo
+
+* prettier file instead of beautify ([31368f0](https://host.com/owner/repository/commits/31368f0))

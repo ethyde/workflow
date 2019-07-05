@@ -42,7 +42,7 @@
     "dev": "$npm_package_config_defineEnv NODE_ENV=development",
     "test": "$npm_package_config_defineEnv NODE_ENV=test",
     "lint": "./node_modules/.bin/eslint --config .eslintrc.js ./workflow",
-    "release": "./node_modules/.bin/release-it --config ./workflow/release-it.json --disable-metrics --verbose",
+    "release": "./node_modules/.bin/release-it --config ./workflow/release-it.json --disable-metrics",
     "clean": "./node_modules/.bin/rimraf"
   },
   "devDependencies": {

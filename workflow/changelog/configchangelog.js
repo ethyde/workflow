@@ -18,8 +18,7 @@ const parserOpts = {
     'resolves',
     'resolved',
     'recette',
-    'production',
-    'recette'
+    'production'
   ],
   issuePrefixes: pkg.issuesPrefix,
   noteKeywords: ['BREAKING CHANGE'],
@@ -29,7 +28,7 @@ const parserOpts = {
 
 const writerOpts = {
   transform: function (commit, context) {
-    let discard = true
+    let discard = false
 
     commit.notes.forEach(function (note) {
       note.title = 'BREAKING CHANGES'
@@ -54,8 +53,13 @@ const writerOpts = {
       commit.type = 'Code Refactoring'
     } else if (commit.type === 'test') {
       commit.type = 'Tests'
-    } else if (commit.type === 'chore') {
-      commit.type = 'Chores'
+    } else if (commit.type === 'build') {
+      commit.type = 'Build'
+    }
+
+    // If commit type not match regex, filter out
+    if (commit.type === null) {
+      return
     }
 
     if (commit.scope === '*') {

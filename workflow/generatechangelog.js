@@ -73,63 +73,17 @@ class CustomChangelog extends Plugin {
           resolve(generateHeader(changelogFileOut))
         })
       changelogStream.on('error', reject)
-      // resolve(changelogStream)
     })
   }
-
-  // async writeChangelog () {
-  //   const generateHeader = require('./changelog/headerchangelog')
-  //   const { infile } = this.options
-  //   let { changelog } = this.config.getContext()
-  //   let changelogFileOut = path.resolve(__dirname, infile)
-
-  //   let hasInfile = false;
-  //   try {
-  //     fs.accessSync(infile);
-  //     hasInfile = true;
-  //   } catch (err) {
-  //     this.debug(err);
-  //   }
-
-  //   if (!hasInfile) {
-  //     changelog = await this.getChangelog()
-  //     // changelog = await this.getChangelog({ releaseCount: 0 })
-  //     this.debug({ changelog });
-  //   }
-
-  //   // await new Promise((resolve, reject) => {
-  //   //   // prependFile(infile, changelog + EOL + EOL, err => {
-  //   //   //   if (err) return reject(err);
-  //   //   //   resolve();
-  //   //   // })
-  //   //   // changelog.on('finish', () => {
-  //   //   //   console.log('>>> Write Changelog', changelogFileOut)
-  //   //   //   resolve(generateHeader(changelogFileOut))
-  //   //   // })
-  //   //   // resolve(generateHeader(changelog))
-  //   //   // changelog.on('finish', () => {
-  //   //   //   console.log('>>> Finish')
-  //   //   // })
-  //   // })
-
-  //   if (!hasInfile) {
-  //     await this.exec(`git add ${infile}`);
-  //   }
-  // }
 
   async beforeRelease () {
     const { infile } = this.options
     const { isDryRun } = this.global
     const changelog = await this.generateChangelog({ releaseCount: 0 })
-    // console.log('>>> await changelog :', changelog)
     this.debug({ changelog })
     this.config.setContext({ changelog })
 
     this.log.exec(`Writing changelog to ${infile}`, isDryRun)
-
-    // if (infile && !isDryRun) {
-    //   await this.writeChangelog()
-    // }
   }
 }
 

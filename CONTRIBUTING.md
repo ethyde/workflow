@@ -579,6 +579,7 @@ Sources:
 [Angular CHANGELOG Guideline](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#)  
 [Conventional Changelog](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)  
 [Conventional Commit](https://www.conventionalcommits.org/)  
+[Git Commit Msg](http://karma-runner.github.io/0.10/dev/git-commit-msg.html)  
 
 README & CONTRIBUTING from [Project Guidelines](https://github.com/elsewhencode/project-guidelines),  
 ISSUE_TEMPLATE & PULL_REQUEST_TEMPLATE from [Open Source Templates](https://github.com/TalAter/open-source-templates)
