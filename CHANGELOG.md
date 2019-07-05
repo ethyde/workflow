@@ -6,11 +6,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## There is no Unpushed/Unreleased work - (2019-07-05)
 
-<a name="0.1.49"></a>
+<a name="0.1.9"></a>
 
-## [0.1.49](https://host.com/owner/repository/compare/0.1.49%0D0.1.8#diff) (2019-07-05)
+## [0.1.9](https://host.com/owner/repository/compare/0.1.9%0D0.1.8#diff) (2019-07-05)
 
+### Bug Fixes
 
+* remove unwanted log from changelog ([6936485](https://host.com/owner/repository/commits/6936485))
 
 <a name="0.1.8"></a>
 
