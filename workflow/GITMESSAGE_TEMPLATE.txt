@@ -5,7 +5,7 @@
 #   the following sentence: If it is applied, this commit will <your description here>
 
 # the subject is composed of:
-#   <type> (scope): [ISSUE-XXXX] <description of the subject treated>
+#   <type>(scope): [ISSUE-XXXX] <description of the subject treated>
 
 # Possible value for <type>:
 #   feat (new feature for the user, not for the build script)

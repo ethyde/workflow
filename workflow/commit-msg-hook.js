@@ -61,7 +61,7 @@ const getSubjectCommitFromBranchName = currentBranchName => {
 
   subjectString += subject
     .toLowerCase()
-    .split('-')
+    .split('_')
     .join(' ')
     .trim()
 

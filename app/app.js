@@ -1,5 +1,5 @@
-function calcul(a, b, c) {
-  return a + b;
+function calcul (a, b, c) {
+  return a + b
 }
 
-export default calcul;
+export default calcul

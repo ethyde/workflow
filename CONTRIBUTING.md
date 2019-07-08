@@ -582,8 +582,9 @@ Sources:
 [Git Commit Msg](http://karma-runner.github.io/0.10/dev/git-commit-msg.html)  
 
 README & CONTRIBUTING from [Project Guidelines](https://github.com/elsewhencode/project-guidelines),  
-ISSUE_TEMPLATE & PULL_REQUEST_TEMPLATE from [Open Source Templates](https://github.com/TalAter/open-source-templates)
+ISSUE_TEMPLATE & PULL_REQUEST_TEMPLATE from [Open Source Templates](https://github.com/TalAter/open-source-templates)  
 
-Others Ressources :
+Others Ressources :  
+[Awesome GitHub Issues & PRs Templates](https://github.com/devspace/awesome-github-templates)  
 [12factorApp](https://12factor.net/fr/)  
 [ShieldsIO](https://shields.io/) Get Badges for your project
