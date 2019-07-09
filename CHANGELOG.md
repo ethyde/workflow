@@ -4,7 +4,15 @@ All notable changes to this project will be documented in this file.
 The format of this CHANGELOG are based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## There is no Unpushed/Unreleased work - (2019-07-08)
+## There is no Unpushed/Unreleased work - (2019-07-09)
+
+<a name="0.2.0"></a>
+
+# [0.2.0](https://host.com/owner/repository/compare/0.2.0%0D0.1.10#diff) (2019-07-09)
+
+### Features
+
+* add chore commit type ([7c4c456](https://host.com/owner/repository/commits/7c4c456))
 
 <a name="0.1.10"></a>
 
@@ -185,7 +193,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.0.13](https://host.com/owner/repository/compare/0.0.13%0D0.0.12#diff) (2018-05-19)
 
-### chore
+### Chore
 
 * add eslintignore file, change eslintrc to eslintrc.js ([2a8575f](https://host.com/owner/repository/commits/2a8575f))
 
