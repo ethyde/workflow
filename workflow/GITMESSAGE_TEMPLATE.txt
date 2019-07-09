@@ -14,7 +14,8 @@
 #   style (formatting, missing semicolons, etc ... no change in production code)
 #   refactor (refactoring the production code: changing the name of the variable, rewriting the code, etc.)
 #   test (add, delete, modify, update tests and fluff, no change of production code)
-#   build (update task, npm module, bundler, etc), no change of production code
+#   build (add or update build task, update release script)
+#   chore (update dependencies, and any maintenance task), no change of production code
 
 # Possible value for <scope> (optional):
 #   init

@@ -28,6 +28,7 @@ const parserOpts = {
 
 const writerOpts = {
   transform: function (commit, context) {
+    // make it false to prevent filter out some Changelogs
     let discard = false
 
     commit.notes.forEach(function (note) {
@@ -55,6 +56,8 @@ const writerOpts = {
       commit.type = 'Tests'
     } else if (commit.type === 'build') {
       commit.type = 'Build'
+    } else if (commit.type === 'chore') {
+      commit.type = 'Chore'
     }
 
     // If commit type not match regex, filter out
