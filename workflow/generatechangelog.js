@@ -43,7 +43,7 @@ class CustomChangelog extends Plugin {
 
     const gitRawCommitsOpts = Object.assign({}, config.gitRawCommitsOpts)
 
-    let templateContext = contextOpts
+    const templateContext = contextOpts
 
     options = Object.assign(options, {
       config: config
@@ -64,8 +64,8 @@ class CustomChangelog extends Plugin {
       const { infile } = this.options
       const changelogStream = this.getChangelogStream(options)
 
-      let changelogFileIn = path.resolve(__dirname, infile)
-      let changelogFileOut = changelogFileIn
+      const changelogFileIn = path.resolve(__dirname, infile)
+      const changelogFileOut = changelogFileIn
 
       changelogStream
         .pipe(fs.createWriteStream(changelogFileIn))

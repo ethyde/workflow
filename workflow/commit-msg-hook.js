@@ -84,7 +84,7 @@ if (fs.existsSync(messageFile)) {
 
   branchName.stdout.on('data', function (data) {
     const branchAreMasterOrDevelop = `${data}`.match(/(master|develop)/)
-    let messageLines = message.split('\n')
+    const messageLines = message.split('\n')
 
     if (
       !branchAreMasterOrDevelop &&

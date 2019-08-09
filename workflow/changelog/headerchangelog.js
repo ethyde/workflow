@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 const getDate = new Date()
 
-let thisYear = getDate.getFullYear()
+const thisYear = getDate.getFullYear()
 let thisMonth = getDate.getMonth() + 1
 let thisDay = getDate.getDate()
 

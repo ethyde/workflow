@@ -77,7 +77,7 @@ const writerOpts = {
       // Do some thing with git subjet
       // Source : https://community.atlassian.com/t5/Bitbucket-questions/Regex-pattern-to-match-JIRA-issue-key/qaq-p/233319#M23571
       const jiraMatcher = /((?!([A-Z0-9a-z]{1,10})-?$)[A-Z]{1}[A-Z0-9]+-\d+)/g
-      let url = context.issue
+      const url = context.issue
         ? context.issue
         : `${context.host}/${context.owner}/${context.repository}`
       if (url) {
