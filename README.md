@@ -1,6 +1,6 @@
 ![Logo of the project](./images/logo.sample.png)
 
-# Name of the project &middot; [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://<url-where-make-pr-for-this-project>)
+# Name of the project &middot; [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://<url-where-make-pr-for-this-project>) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v1.4%20adopted-ff69b4.svg)](code-of-conduct.md)
 
 > Additional information or tag line
 

@@ -1,23 +1,24 @@
-# Project Guidelines &middot; [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://<url-where-make-pr-for-this-project>)
+# Project Guidelines
 
 > While developing a new project is like rolling on a green field for you, maintaining it is a potential dark twisted nightmare for someone else.
 > Here's a list of guidelines we've found, written and gathered that (we think) works really well with most JavaScript projects here at [brand](http://www.brand-url.com).
 
-* [Git](#git)
-  * [Some Git rules](#some-git-rules)
-  * [Git workflow](#git-workflow)
-  * [Writing good commit messages](#writing-good-commit-messages)
-* [Documentation](#documentation)
-* [Environments](#environments)
-  * [Consistent dev environments](#consistent-dev-environments)
-  * [Consistent dependencies](#consistent-dependencies)
-* [Dependencies](#dependencies)
-* [Testing](#testing)
-* [Structure and Naming](#structure-and-naming)
-* [Code style](#code-style)
-  * [Some code style guidelines](#code-style-check)
-  * [Enforcing code style standards](#enforcing-code-style-standards)
-* [Logging](#logging)
+- [Project Guidelines](#project-guidelines)
+  - [1. Git](#1-git)
+    - [1.1 Some Git rules](#11-some-git-rules)
+    - [1.2 Git workflow](#12-git-workflow)
+    - [1.3 Writing good commit messages](#13-writing-good-commit-messages)
+  - [2. Documentation](#2-documentation)
+  - [3. Environments](#3-environments)
+    - [3.1 Consistent dev environments:](#31-consistent-dev-environments)
+    - [3.2 Consistent dependencies:](#32-consistent-dependencies)
+  - [4. Dependencies](#4-dependencies)
+  - [5. Testing](#5-testing)
+  - [6. Structure and Naming](#6-structure-and-naming)
+  - [7. Code style](#7-code-style)
+    - [7.1 Some code style guidelines](#71-some-code-style-guidelines)
+    - [7.2 Enforcing code style standards](#72-enforcing-code-style-standards)
+  - [8. Logging](#8-logging)
 
 <a name="git"></a>
 
@@ -565,26 +566,26 @@ Having a good guideline for creating commits and sticking to it makes working wi
 
 Sources:
 
-[Project Guidelines](https://github.com/elsewhencode/project-guidelines),  
-[Contributing to Atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md),  
-[Contributor Covenant](https://www.contributor-covenant.org/),  
-[RisingStack Engineering](https://blog.risingstack.com/),  
-[Mozilla Developer Network](https://developer.mozilla.org/),  
-[Heroku Dev Center](https://devcenter.heroku.com),  
-[Airbnb/javascript](https://github.com/airbnb/javascript),  
-[Atlassian Git tutorials](https://www.atlassian.com/git/tutorials),  
-[Commit Often, Perfect Later, Publish Once: Git Best Practices](https://sethrobertson.github.io/GitBestPractices/)  
+[Project Guidelines](https://github.com/elsewhencode/project-guidelines),
+[Contributing to Atom](https://github.com/atom/atom/blob/master/CONTRIBUTING.md),
+[Contributor Covenant](https://www.contributor-covenant.org/),
+[RisingStack Engineering](https://blog.risingstack.com/),
+[Mozilla Developer Network](https://developer.mozilla.org/),
+[Heroku Dev Center](https://devcenter.heroku.com),
+[Airbnb/javascript](https://github.com/airbnb/javascript),
+[Atlassian Git tutorials](https://www.atlassian.com/git/tutorials),
+[Commit Often, Perfect Later, Publish Once: Git Best Practices](https://sethrobertson.github.io/GitBestPractices/)
 
-[Keep a CHANGELOG](https://keepachangelog.com/fr/1.0.0/)  
-[Angular CHANGELOG Guideline](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#)  
-[Conventional Changelog](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)  
-[Conventional Commit](https://www.conventionalcommits.org/)  
-[Git Commit Msg](http://karma-runner.github.io/0.10/dev/git-commit-msg.html)  
+[Keep a CHANGELOG](https://keepachangelog.com/fr/1.0.0/)
+[Angular CHANGELOG Guideline](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#)
+[Conventional Changelog](https://github.com/conventional-changelog/commitlint/tree/master/%40commitlint/config-conventional)
+[Conventional Commit](https://www.conventionalcommits.org/)
+[Git Commit Msg](http://karma-runner.github.io/0.10/dev/git-commit-msg.html)
 
-README & CONTRIBUTING from [Project Guidelines](https://github.com/elsewhencode/project-guidelines),  
-ISSUE_TEMPLATE & PULL_REQUEST_TEMPLATE from [Open Source Templates](https://github.com/TalAter/open-source-templates)  
+README & CONTRIBUTING from [Project Guidelines](https://github.com/elsewhencode/project-guidelines),
+ISSUE_TEMPLATE & PULL_REQUEST_TEMPLATE from [Open Source Templates](https://github.com/TalAter/open-source-templates)
 
-Others Ressources :  
-[Awesome GitHub Issues & PRs Templates](https://github.com/devspace/awesome-github-templates)  
-[12factorApp](https://12factor.net/fr/)  
+Others Ressources :
+[Awesome GitHub Issues & PRs Templates](https://github.com/devspace/awesome-github-templates)
+[12factorApp](https://12factor.net/fr/)
 [ShieldsIO](https://shields.io/) Get Badges for your project
