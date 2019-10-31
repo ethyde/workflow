@@ -27,6 +27,10 @@ yarn-error.log*
 dist/
 build/
 
+#Test-related files
+/coverage.data
+/coverage/
+
 # Serverless generated files
 .serverless/
 
@@ -83,3 +87,5 @@ $RECYCLE.BIN/
 .Trashes
 .VolumeIcon.icns
 .com.apple.timemachine.donotpresent
+
+# Per project files and folders to ignore from git
