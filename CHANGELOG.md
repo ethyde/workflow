@@ -12,7 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Chore
 
-* update dependencies ([d903e0b](https://host.com/owner/repository/commits/d903e0b))
+* update dependencies ([13fa6cd](https://host.com/owner/repository/commits/13fa6cd))
 
 <a name="0.2.4"></a>
 

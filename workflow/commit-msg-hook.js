@@ -9,7 +9,7 @@ const pkg = require(path.join(__dirname, '../package.json'))
 
 // Because short commit message are not in `.git/COMMIT_EDITMSG`,
 // but in `.git/COMMIT_EDITMSG message`. this not trigger commit parsing
-const messageFile = process.env.GIT_PARAMS
+const messageFile = process.env.HUSKY_GIT_PARAMS
 
 /*
   If Branch are not Master or Develop
