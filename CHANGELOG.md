@@ -6,12 +6,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## There is no Unpushed/Unreleased work - (2020-01-10)
 
-<a name="0.3.1"></a>
+<a name="0.3.2"></a>
 
-## [0.3.1](https://host.com/owner/repository/compare/0.3.1%0D0.2.4#diff) (2020-01-10)
+## [0.3.2](https://host.com/owner/repository/compare/0.3.2%0D0.2.4#diff) (2020-01-10)
 
 ### Chore
 
+* [ISSUE-XXX] update dependencies ([200d827](https://host.com/owner/repository/commits/200d827))
+* update dependencies ([fe7a053](https://host.com/owner/repository/commits/fe7a053))
 * update dependencies ([13fa6cd](https://host.com/owner/repository/commits/13fa6cd))
 
 <a name="0.2.4"></a>
