@@ -8,8 +8,9 @@
 #   <type>(scope): [ISSUE-XXXX] <description of the subject treated>
 
 # Possible value for <type>:
-#   feat (new feature for the user, not for the build script)
-#   fix (bug fix for the user, not for the build script)
+#   feature (new feature for the user, not for the build script)
+#   bugfix (bug fix for the user, not for the build script)
+#   hotfix (urgent bug fix, not for the build script)
 #   docs (update documents)
 #   style (formatting, missing semicolons, etc ... no change in production code)
 #   refactor (refactoring the production code: changing the name of the variable, rewriting the code, etc.)
