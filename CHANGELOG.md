@@ -4,11 +4,19 @@ All notable changes to this project will be documented in this file.
 The format of this CHANGELOG are based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## There is no Unpushed/Unreleased work - (2020-03-20)
+## There is no Unpushed/Unreleased work - (2020-06-12)
+
+<a name="0.3.5"></a>
+
+## [0.3.5](https://host.com/owner/repository/compare/v0.3.5%0Dv0.3.4#diff) (2020-06-12)
+
+### Chore
+
+* update dependencies ([c1d9d5e](https://host.com/owner/repository/commits/c1d9d5e))
 
 <a name="0.3.4"></a>
 
-## [0.3.4](https://host.com/owner/repository/compare/0.3.4%0D0.3.3#diff) (2020-03-20)
+## [0.3.4](https://host.com/owner/repository/compare/v0.3.4%0D0.3.3#diff) (2020-03-20)
 
 ### Chore
 
