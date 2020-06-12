@@ -6,9 +6,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## There is no Unpushed/Unreleased work - (2020-06-12)
 
+<a name="0.3.6"></a>
+
+## [0.3.6](https://host.com/owner/repository/compare/0.3.6%0D0.3.5#diff) (2020-06-12)
+
+### Chore
+
+* remove deprecated config ([eceb993](https://host.com/owner/repository/commits/eceb993))
+
 <a name="0.3.5"></a>
 
-## [0.3.5](https://host.com/owner/repository/compare/v0.3.5%0Dv0.3.4#diff) (2020-06-12)
+## [0.3.5](https://host.com/owner/repository/compare/0.3.5%0Dv0.3.4#diff) (2020-06-12)
 
 ### Chore
 
