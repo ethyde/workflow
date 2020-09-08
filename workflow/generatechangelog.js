@@ -78,7 +78,7 @@ class CustomChangelog extends Plugin {
 
   async beforeRelease () {
     const { infile } = this.options
-    const { isDryRun } = this.global
+    const { isDryRun } = this.config.isDryRun
     const changelog = await this.generateChangelog({ releaseCount: 0 })
     this.debug({ changelog })
     this.config.setContext({ changelog })
